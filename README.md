@@ -22,11 +22,17 @@ No real-time risk assessment Existing OCR systems only extract data — they don
 This project introduces an AI-powered autonomous agent that transforms document processing into an intelligent workflow system.
 
 Key capabilities:
+
 📄 Extracts structured data using OCR + NLP
+
 🔗 Links related documents (Invoice ↔ PO ↔ Delivery Receipt)
+
 ✅ Performs validation checks (field, arithmetic, cross-document)
+
 🚨 Detects fraud and anomalies
+
 📊 Assigns risk scores (0–100)
+
 ⚡ Recommends actions:
 Approve
 Reject
@@ -44,23 +50,31 @@ Fraud detection system
 Risk scoring mechanism
 Explanation engine (reasoning for decisions)
 Action recommendation system
+
 ⚙️ Tech Stack
+
 🔹 Backend
 Python
 FastAPI
+
 🔹 AI / ML
 Tesseract OCR
 HuggingFace Transformers
 LayoutLM (optional for document understanding)
+
 🔹 Data Processing
 Pandas
 Regex
+
 🔹 Frontend
 React / Next.js / Streamlit
+
 🔹 Database
 SQLite / MongoDB
+
 🔹 DevOps
 Docker
+
 ▶️ How to Run
 1. Clone the Repository
 git clone <your-repo-link>
@@ -105,6 +119,7 @@ POST /upload → Upload document
 GET /documents → Fetch all documents
 POST /validate → Validate document
 GET /risk/{id} → Get risk score
+
 ⚠️ Error Logging
 Centralized logging system implemented
 Logs stored for:
@@ -126,12 +141,14 @@ Issues:
 Recommended Action:
 - Manual verification
 - Request correction
+
 🔥 Unique Selling Points
 Beyond OCR → Full decision intelligence system
 Multi-document understanding
 Risk-based automation
 Explainable AI
 Real-world business application
+
 🔮 Future Enhancements
 Real-time API integrations
 Advanced ML anomaly detection
